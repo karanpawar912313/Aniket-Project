@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- <div class="main">
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo.jpg" alt="logo">
+            </div>
+            <a href="#"><i class="fa fa-envelope"></i> <i class="fa fa-caret-down"></i></a>
+            <a href="#"> Welcome, {{ username }}</a>
+            <div class="dropdown">
+                <a href="#"><i class="fa fa-user"></i><i class=" fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="#">Profile</a>
+                    <a href="{{ url_for('logout') }}">Logout</a>
+                </div>
+                
+            </div>
+            <a href="">DULD <i class=" fa fa-caret-down"></i></a>
+        </div>
+        <div class="sidebar">
+           <ul>
+            <li><a href="{{ url_for('dashboard')}}">Dashboard</a></li>
+           </ul>
+        </div>
+    </div> -->
+    <nav>
+        <div>
+            <button type="button"></button>
+            <a href="/dashboard" ><img src="/static/logo.png" alt="logo" id="logo"></a>
+        </div>
+        <nav class="navbar">
+            <ul class="nav-bar">
+                <li>
+                    <a href="#">
+                        <i class="fa fa-envelope fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>               
+                </li>
+                <li><a href="#"><b>Welcome, {{ username }}</b></a></li>
+                <li class="dropdown">
+                    <a href="#">
+                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul>
+                        <li class=".dropdown-content"><a href="/myprofile"><i class="fa fa-user fa-fw"></i> My Profile</a></li>
+                        <li><a href="/logout"><i class="fa fa-sign-out fa-fw"></i> Logout</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"> {{ username }} <i class="fa fa-caret-down"></i> </a>
+                    <ul>
+                        <li>
+                            <a href=""><i class="fa fa-flag-in"></i> DULD - Dhule</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div>
+            <div>
+                <nav>
+                    <ul>
+                        <li><a href="/dashboard"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a></li>
+                        <li>
+                            <a href="#"><i class="fa fa-list fa-fw"></i> My Route</a>
+                            <ul>
+                                <li><a href="/start_route"> Start Route</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/ic_data"><i class="fa fa-list fa-fw"></i> Invoice </a></li>                      
+                        <li><a href="/weekly_da_approve"><i class="fa fa-list fa-fw"></i> Weekly DA Approve </a></li>                    
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>
